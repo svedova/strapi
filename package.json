@@ -11,7 +11,7 @@
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
     "start": "strapi start",
-    "start:stormkit": "rm -rf public/uploads && ln -s public/uploads $VOLUME_PATH && strapi start",
+    "start:stormkit": "rm -rf public/uploads && ln -s $VOLUME_PATH public/uploads && strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
